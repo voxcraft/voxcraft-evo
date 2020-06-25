@@ -2,6 +2,12 @@ from lxml import etree
 
 
 def write_vxd(genotype, seed, iid):
+    """
+    :param genotype: a Genome.Genotype
+    :param seed: each random seed will have its own data folder to work out of
+    :param iid: each vxd will be labeled with the individual's id
+    :return:
+    """
 
     (x, y, z) = genotype.orig_size_xyz
 
